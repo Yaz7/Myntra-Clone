@@ -33,15 +33,18 @@
                 <hr />
                 <div class="ddm_men_vam">
                   <div>
-                      <h6>TopWear</h6>
-                      <p onclick="window.location.href='men_tshirt.html'">T-Shirts</p>
-                      <p onclick="window.location.href='men_jacket.html'">Jackets</p>
-                    </div>
-                    <div>
-                      <h6>BottomWear</h6>
-                      <p onclick="window.location.href='men_jeans.html'">Jeans</p>
-                      <p onclick="window.location.href='men_shoes.html'">Shoes</p>
-                    </div>
+                    <h6>TopWear</h6>
+                    <p onclick="window.location.href='./pages/men_shirts.html'">Shirts</p>
+                    <p onclick="window.location.href='./pages/men_jacket.html'">Jackets</p>
+                  </div>
+                  <div>
+                    <h6>BottomWear</h6>
+                    <p onclick="window.location.href='./pages/men_jeans.html'">Jeans</p>
+                  </div>
+                  <div>
+                    <h6>Foootwear</h6>
+                    <p onclick="window.location.href='./pages/men_shoes.html'">Shoes</p>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -52,19 +55,22 @@
                   <div class="ddm_men_vam">
                     <div>
                       <h6>TopWear</h6>
-                      <p onclick="window.location.href='women_kurta.html'">Kurtas</p>
-                      <p onclick="window.location.href='women_jacket.html'">Jackets</p>
+                      <p onclick="window.location.href='./pages/women_kurta.html'">Kurtas</p>
+                      <p onclick="window.location.href='./pages/women_jacket.html'">Jackets</p>
                     </div>
                     <div>
                       <h6>BottomWear</h6>
-                      <p onclick="window.location.href='women_jeans.html'">Jeans</p>
-                      <p onclick="window.location.href='women_shoes.html'">Shoes</p>
+                      <p onclick="window.location.href='./pages/women_jeans.html'">Jeans</p>
+                    </div>
+                    <div>
+                      <h6>Footwear</h6>
+                      <p onclick="window.location.href='./pages/women_shoes.html'">Shoes</p>
                     </div>
                     </div>
               </div>
             </div>
             <div>KIDS</div>
-            <div>HOME & LIVING</div>
+            <div>SHOP BY YOUR SKIN TONE</div>
             <div>BEAUTY</div>
             <div>STUDIO<sup>New</sup></div>
           </div>
@@ -126,28 +132,12 @@
       <div id="bottom">
           <div id="left">
   
-            
-              <!-- <h4>CATEGORIES</h4> -->
-              <!-- <br>
-             
-              <input type="checkbox" class="categoryS" value="Shoes" onclick="categorys()">Shoes</input><br>
-              <input type="checkbox" class="categoryJ" value="Jacket" onclick="categoryJ()">Jacket</input><br>
-              <input type="checkbox" class="categoryje" value="Jeans" onclick="categoryje()">Jeans</input><br>
-              <input type="checkbox" class="categoryC" value="Kurtas & Suits" onclick="categoryC()">Kurtas & Suits</input><br>
-               
-             
-  
-                <hr id="bottomhr"> -->
-  
                 <h3 id="brandh3">Brand</h3>
                 <br>
   
                 <input type="checkbox" id="filterbrandA" value="ADIDAS" onclick="filterbrandA()">Adidas</input><br>
                 <input type="checkbox" id="filterbrandN" value="NIKE" onclick="filterbrandN()">Nike</input><br>
-                <!-- <input type="checkbox" id="filterbrandR" value="LIBAS" onclick="filterbrandR()">Libas</input><br>
-                <input type="checkbox" id="filterbrandW" value="ANOUK" onclick="filterbrandW()">Anouk</input><br>
-                 -->
-            
+
           </div>
           <div id="containermen">
   
@@ -237,42 +227,6 @@ function handlePriceSort(){
  }
 
  displayData(womensData_jacket)
-
-//  function categorys(){
-//      var selectcategory = document.querySelector(".categoryS").value
-//      console.log(selectcategory)
-//      var categoryname = womensData_jacket.filter(function(elem){
-//          return elem.category == selectcategory;
-//      })
-//      displayData(categoryname)
-//  }
-
-//  function categoryJ(){
-//      var selectcategory = document.querySelector(".categoryJ").value
-//      console.log(selectcategory)
-//      var categoryname = womensData_jacket.filter(function(elem){
-//          return elem.category == selectcategory;
-//      })
-//      displayData(categoryname)
-//  }
-
-//  function categoryje(){
-//      var selectcategory = document.querySelector(".categoryje").value
-//      console.log(selectcategory)
-//      var categoryname = womensData_jacket.filter(function(elem){
-//          return elem.category == selectcategory;
-//      })
-//      displayData(categoryname)
-//  }
-
-//  function categoryC(){
-//      var selectcategory = document.querySelector(".categoryC").value
-//      console.log(selectcategory)
-//      var categoryname = womensData_jacket.filter(function(elem){
-//          return elem.category == selectcategory;
-//      })
-//      displayData(categoryname)
-//  }
 
                function displayData(womensData_jacket){
    document.querySelector("#containermen").innerHTML=""
